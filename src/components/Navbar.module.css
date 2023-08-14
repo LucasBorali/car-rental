@@ -1,0 +1,47 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    width: 75vw;
+    margin: 0 auto;
+    align-items: center;
+    height: 10vh;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.logo img {
+    width: 32px;
+}
+
+.logo h5, .logo h6 {
+    margin: 0;
+}
+
+.navlinks {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navlinks li {
+    font-weight: bold;
+}
+
+.navlinks li:hover, .active {
+    
+    color: red;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.52);
+}
+
+.sign-in {
+    display: flex;
+    gap: 1rem;
+    font-weight: bold;
+    align-items: center;
+}
+
