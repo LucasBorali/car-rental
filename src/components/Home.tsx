@@ -4,6 +4,9 @@ import checkIcon from '../Assets/18489228581556258233.svg';
 import arrowIcon from '../Assets/10632066661535694868.svg';
 import {Link} from 'react-router-dom'
 const Home = () => {
+
+
+
   return (
     <section>
       <div className={classes['hero-container']}>
@@ -27,7 +30,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <img
+        <img className={classes['car-image']}
           src="https://www.pngall.com/wp-content/uploads/11/Red-Kia-PNG-Photos.png"
           alt=""
         />

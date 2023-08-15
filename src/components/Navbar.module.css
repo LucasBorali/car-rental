@@ -1,47 +1,108 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 1rem;
-    width: 75vw;
-    margin: 0 auto;
-    align-items: center;
-    height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  width: 75vw;
+  margin: 0 auto;
+  align-items: center;
+  height: 10vh;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .logo img {
-    width: 32px;
+  width: 32px;
 }
 
-.logo h5, .logo h6 {
-    margin: 0;
+.logo h5,
+.logo h6 {
+  margin: 0;
 }
 
 .navlinks {
-    list-style: none;
-    display: flex;
-    gap: 15px;
+  list-style: none;
+  display: flex;
+  gap: 15px;
 }
 
 .navlinks li {
-    font-weight: bold;
+  font-weight: bold;
 }
 
-.navlinks li:hover, .active {
-    
-    color: red;
-    text-shadow: 0 0 10px rgba(255, 0, 0, 0.52);
+.navlinks li:hover,
+.active {
+  color: red;
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.52);
 }
 
 .sign-in {
-    display: flex;
-    gap: 1rem;
-    font-weight: bold;
-    align-items: center;
+  display: flex;
+  gap: 1rem;
+  font-weight: bold;
+  align-items: center;
 }
 
+.navbar svg {
+  height: 32px;
+  width: 32px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menu-window {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: sliding 0.5s;
+}
+
+.close-window {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+@keyframes sliding {
+  0% {
+    left: -500px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .navlinks {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .sign-in {
+    position: absolute;
+    bottom: 2rem;
+  }
+}

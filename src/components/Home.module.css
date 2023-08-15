@@ -1,6 +1,5 @@
 .hero-container {
   display: flex;
-
   height: 90vh;
   justify-content: center;
   align-items: center;
@@ -40,4 +39,14 @@
   border-radius: 5px;
   color: #fff;
   padding: 0 10px;
+}
+
+@media (max-width: 500px) {
+  .hero {
+    width: 90vw;
+    
+  }
+  .car-image {
+    display: none;
+  }
 }
