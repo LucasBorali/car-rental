@@ -1,0 +1,24 @@
+.about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 90vh;
+    justify-content: center;
+    
+}
+
+.cards-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards-container div {
+    width: 200px;
+    text-align: center;
+}
+
+.cards-container img {
+    width: 80px;
+}

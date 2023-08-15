@@ -3,6 +3,7 @@ import classes from './Home.module.css';
 import checkIcon from '../Assets/18489228581556258233.svg';
 import arrowIcon from '../Assets/10632066661535694868.svg';
 import {Link} from 'react-router-dom'
+import VehicleModels from './VehicleModels';
 const Home = () => {
 
 
@@ -20,10 +21,10 @@ const Home = () => {
             flexible pick-up options and much more
           </p>
           <div className={classes['check-links']}>
-            <Link className='red-button' to='about'>
+            <a className='red-button' href='#book-ride'>
               Book Ride
               <img src={checkIcon} alt="" />
-            </Link>
+            </a>
             <Link className={classes['black-button']} to='about'>
               Learn More
               <img src={arrowIcon} alt="" />
@@ -35,6 +36,8 @@ const Home = () => {
           alt=""
         />
       </div>
+
+      <VehicleModels/>
     </section>
   );
 };

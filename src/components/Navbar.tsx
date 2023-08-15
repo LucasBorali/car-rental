@@ -35,16 +35,6 @@ const Navbar = () => {
         <NavLink
           className={({ isActive }) => (isActive ? classes.active : undefined)}
           end
-          to="/vehicle-models"
-        >
-          Vehicle Models
-        </NavLink>
-      </li>
-      <li>
-        {' '}
-        <NavLink
-          className={({ isActive }) => (isActive ? classes.active : undefined)}
-          end
           to="/testimonials"
         >
           Testimonials
