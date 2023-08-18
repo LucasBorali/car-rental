@@ -61,7 +61,7 @@ const VehicleModels = () => {
               <tr></tr>
             </tbody>
           </table>
-          <button>RESERVE NOW</button>
+          <button className={classes['table-btn']}>RESERVE NOW</button>
         </div>
       </div>
     </div>
