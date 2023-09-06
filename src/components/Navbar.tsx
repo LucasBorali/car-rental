@@ -30,36 +30,6 @@ const Navbar = () => {
           About
         </NavLink>
       </li>
-      <li>
-        {' '}
-        <NavLink
-          className={({ isActive }) => (isActive ? classes.active : undefined)}
-          end
-          to="/testimonials"
-        >
-          Testimonials
-        </NavLink>
-      </li>
-      <li>
-        {' '}
-        <NavLink
-          className={({ isActive }) => (isActive ? classes.active : undefined)}
-          end
-          to="/our-team"
-        >
-          Our Team
-        </NavLink>
-      </li>
-      <li>
-        {' '}
-        <NavLink
-          className={({ isActive }) => (isActive ? classes.active : undefined)}
-          end
-          to="/contact"
-        >
-          Contact
-        </NavLink>
-      </li>
     </ul>
   );
   const windowSize = window.innerWidth > 500;
